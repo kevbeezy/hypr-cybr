@@ -8,6 +8,11 @@ function y
 	end
 	rm -f -- "$tmp"
 end
+
+function opencode
+    /usr/bin/bash -c '/home/joachim/.opencode/bin/opencode "$@"' -- $argv
+end
+
 if status is-interactive
 # Commands to run in interactive sessions can go here
     command clear
