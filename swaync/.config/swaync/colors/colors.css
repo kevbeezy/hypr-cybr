@@ -1,0 +1,37 @@
+/* ../config.json
+
+/*@define-color center-bg                 rgba(8, 8, 11, 0.8);
+@define-color notification-bg           rgba(8, 8, 11, 0.9);
+@define-color center-notification-bg    #101014;
+@define-color background                rgba(8, 8, 11, 0.9);
+@define-color background-alt            #101014;
+@define-color text                      #acb0d0;
+@define-color text-alt                  #787c99;
+@define-color selected                  alpha(@text-alt, .4);
+@define-color hover                     alpha(@selected, .4);
+@define-color urgent                    @text-alt;*/
+
+/* Abyssal_Black (#0D111A) converted to RGB for transparency */
+@define-color center-bg                 rgba(13, 17, 26, 0.8);
+@define-color notification-bg           rgba(13, 17, 26, 0.9);
+@define-color background                rgba(13, 17, 26, 0.9);
+
+/* Deep_Midnight_Blue (#1A2845) for solid surface layers */
+@define-color center-notification-bg    #1A2845;
+@define-color background-alt            #1A2845;
+
+/* Cityscape_Gold (#ECA64A) for primary readable text */
+@define-color text                      #FF528A;
+
+/* Atmospheric_Steel_Blue (#455E82) for muted/secondary text */
+@define-color text-alt                  #455E82;
+
+/* Neon_Magenta (#FF528A) injected for highlighting/selection */
+@define-color selected                  alpha(#455e82, 0.4);
+@define-color hover                     alpha(@selected, 0.4);
+
+/* Semantic Laser Red (#FF2A55) applied strictly for urgent states */
+@define-color urgent                    #FF2A55;
+
+/* Widget Backgrounds */
+@define-color widget-bg                 #18202c;

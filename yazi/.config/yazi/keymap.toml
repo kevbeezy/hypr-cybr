@@ -1,0 +1,10 @@
+[[mgr.prepend_keymap]]
+on   = [ "g", "p" ]
+run  = "cd ~/projects"
+desc = "Go to ~/projects"
+
+[[mgr.prepend_keymap]]
+on   = [ "g", "l" ]
+run  = "cd ~/localsend"
+desc = "Go to ~/localsend"
+

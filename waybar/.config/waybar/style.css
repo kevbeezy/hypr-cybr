@@ -1,0 +1,75 @@
+@import "colors/colors.css";  
+
+/* For more information - https://github.com/Alexays/Waybar/wiki/Styling */
+
+* {
+    all: unset;
+    font-family: "Iosevka Nerd Font Propo", monospace;
+}
+
+window#waybar {
+    background-color: #0D111A;
+    color: #455E82;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(to right, #33ccff, #00ff99);
+    border-image-slice: 1;
+    border-radius: 0 0 10px 10px;
+}
+
+#workspaces {
+    /*min-width: 100px;*/
+    font-size: 1rem;
+    padding: 2px 4px;
+    margin: 2px 0;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: #FF528A;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button.active {
+    background: #1A2845;
+    border-bottom: 3px solid #455E82;
+    transition: all 200ms ease-in-out; 
+}
+
+#workspaces button.urgent {
+    background: @Neon_Magenta;
+    color: @Abyssal_Black;
+    border-bottom: 3px solid @Abyssal_Black;
+    transition: all 200ms ease-in-out;
+}
+#custom-settings {
+    font-size: 16px;
+    margin: 0 10px;
+}
+#window,
+#wireplumber{
+    margin: 0 10px;
+}
+#cava {
+    color: @Cityscape_Gold;
+    margin: 0 12px;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+tooltip {
+  background: alpha(#1A2845, .5);
+  border: 1px solid alpha(#0D111A, .8);
+}
+tooltip label {
+  color: @Cityscape_Gold;
+}
+
+#tray menu {
+  background: alpha(#1A2845, .8);
+  border: 1px solid alpha(#0D111A, .8);
+}
+
+#tray{
+    color: @Cityscape_Gold
+}
