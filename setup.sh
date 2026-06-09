@@ -20,7 +20,19 @@ PACKAGES=(
 # Ensure the script is running from the hypr-cybr directory
 cd "$(dirname "$0")" || exit
 
+echo "WARNING: THIS WILL REMOVE ANY CONFLICTING PACKAGES"
+echo "DO YOU WANT TO CONTINUE? [y/N]"
+
+read proceed
+
+if [[ $proceed == "y" || $proceed == "Y" ]]
+then
 echo "Starting GNU Stow overwrite process..."
+
+if [ -f "$TARGET/.config/starship.toml" ]; 
+then
+        rm "$TARGET/.config/starship.toml"
+fi
 
 for pkg in "${PACKAGES[@]}"; do
     if [ -d "$pkg" ]; then
@@ -39,3 +51,8 @@ for pkg in "${PACKAGES[@]}"; do
 done
 
 echo "Done! All dotfiles have been successfully overwritten and linked."
+exit 0
+else
+    echo "Exiting..."
+    exit 1
+fi
