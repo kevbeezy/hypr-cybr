@@ -14,6 +14,7 @@ PACKAGES=(
     "swaync"
     "waybar"
     "yazi"
+    "starship"
 )
 
 # Ensure the script is running from the hypr-cybr directory
