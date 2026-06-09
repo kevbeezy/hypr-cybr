@@ -4,6 +4,12 @@ Personal dotfiles and configurations for a seamless desktop experience. Managed 
 
 > **WARNING:** The setup script will forcefully remove any conflicting dotfiles in your `~/.config` directory. Please ensure you back up your existing configurations before proceeding.
 
+> **NOTE:** I recommend editting these configs to match your hardware setup. Run `hyprctl monitors` in the terminal.
+>
+> ```bash
+> hypr/.config/hypr/modules/monitors.lua
+> hypr/.config/hypr/modules/winrules.lua
+> hypr/.config/hypr/hyprlock.conf
 ---
 
 ## Automated Installation
@@ -25,4 +31,11 @@ If you prefer to manually stow specific dotfiles instead of using the automated 
 ```bash
 cd ~/projects/hypr-cybr
 stow -t ~ [package_name]
+```
+
+**Example:** Stowing only the Starship prompt configuration:
+
+```bash
+cd ~/projects/hypr-cybr
+stow -t ~ starship
 ```
