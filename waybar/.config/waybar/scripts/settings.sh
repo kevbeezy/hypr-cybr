@@ -9,7 +9,7 @@ case "$option" in
     "Kitty") kitty -e $EDITOR "$HOME/.config/kitty/kitty.conf" ;;
     "SwayNC") swaync_options=$(printf "config.json\nstyle.css" | rofi -dmenu -p "SwayNC Options") ;;
     "Rofi") kitty -e $EDITOR "$HOME/.config/rofi/config.rasi" ;;
-    "Fish") kitty -e $EDITOR "$HOME/.config/fish/config.fish" ;;
+    "Fish") kitty -e $EDITOR "$HOME/.config/fish/" ;;
     "Starship") kitty -e $EDITOR "$HOME/.config/starship.toml" ;;
 esac
 
