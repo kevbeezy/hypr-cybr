@@ -8,3 +8,8 @@ on   = [ "g", "l" ]
 run  = "cd ~/localsend"
 desc = "Go to ~/localsend"
 
+[[mgr.prepend_keymap]]
+on   = [ "g", "t" ]
+run  = "cd ~/.local/share/Trash/files"
+desc = "Go to Trash"
+
